@@ -57,7 +57,7 @@ struct Dict {
 ```
 
 ## The context
-Now, for specify this array of "dictionnary", you must to set it to a context structure: `ssfmt_ctx_t (struct SSFMT_ctx)`.
+Now, you need to specify the "dictionnary" array in the context structure: `ssfmt_ctx_t (struct SSFMT_ctx)`.
 
 ```c
 struct SSFMT_ctx {
