@@ -70,7 +70,7 @@ struct SSFMT_ctx {
 This context structure take `3` fields:
 
   - `array`: (struct Dict \*), *This pointer take the array address of Dict structure*.
-  - `array_len`: (size\_t), *This object take the length of* `array`.
+  - `array_len`: (size\_t), *This object take the array length of*.
   - `case_sensitive`: (\_Bool), *If set to `1` the identifer will become case sensitive; If set to `0` the identifer will become not case sensitive*.
 
 The library propose a macro function for init a context:
@@ -99,8 +99,8 @@ This function take `4` arguments:
 
 - `ctx`: (const ssfmt\_ctx\_t \*), is an **input** argument, *it's the address of the initialized*`struct SSFMT_ctx`.
 - `format`: (const char \*), is an **input** argument, *is a null terminated string with formats to replace*.
-- `buf`: (char *buf), is a **output** argument, *is take address of a buffer will store the result of the formatted character string* `format`.
-- `buf_len`: (size\_t): is a **input** argument, *is the size of the buffer* `buf`.
+- `buf`: (char *buf), is an **output** argument, *it takes a buffer which will store the result of the formatted character string* `format`.
+- `buf_len`: (size\_t): is an **input** argument, *it's the size of the buffer* `buf`.
 
 The return value is the address of `buf` or `NULL` if an error occured.
 
