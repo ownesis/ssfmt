@@ -69,8 +69,8 @@ struct SSFMT_ctx {
 
 This context structure take `3` fields:
 
-  - `array`: (struct Dict \*), *This pointer take address of the array of Dict structure*.
-  - `array_len`: (size\_t), *This object take length of* `array`.
+  - `array`: (struct Dict \*), *This pointer take the array address of Dict structure*.
+  - `array_len`: (size\_t), *This object take the length of* `array`.
   - `case_sensitive`: (\_Bool), *If set to `1` the identifer will become case sensitive; If set to `0` the identifer will become not case sensitive*.
 
 The library propose a macro function for init a context:
