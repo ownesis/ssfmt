@@ -13,7 +13,7 @@ Example: `{name}` *(is a format with "name" like indentifier)*
 
 > Example: `\{name\}` *(Here, "name" will not be interpreted like as format)*
 
-An identifier have a limit of `255` charaters. If an identifer len greater than this limit, only the first `255` char are compared.
+An identifier have a limit of `255` charaters. If an identifer len greater than this limit, only the first `255` chararacters are compared.
 
 A identifier can be represented with any of  ascii table characters, but its better to use only alphabet `[a-z]+`upper/lower, digits `[0-9]+` and underscore `_`.
 
