@@ -5,7 +5,7 @@
 SSFMT is **NOT** an API/library for parse [{fmt}](https://fmt.dev/latest/index.html) syntax !
 
 # Syntax
-The syntax of SSFTM is very simple, its use braces `{` `}` for "declare" a format, and an `identifier` inside the braces block for identifie the format.
+The syntax of SSFMT is very simple, its use braces `{` `}` for "declare" a format, and an `identifier` inside the braces block for identifie the format.
 
 Example: `{name}` *(is a format with "name" like indentifier)*
 
