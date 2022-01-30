@@ -63,7 +63,7 @@ char *ssfmt_parser(const ssfmt_ctx_t *ctx, const char *format, char *buf, size_t
 
     format_len = strlen(format);
 
-    for (; i < format_len && buf_index < buf_len;) {
+    while (i < format_len && buf_index < buf_len) {
         memset(key, 0, BP_MAX_KEY_LEN);
         key_index = 0;
 
