@@ -37,6 +37,11 @@ A identifier can be represented with any of  ascii table characters, but its bet
 - Shared object library `libssfmt.so` inside `/usr/local/lib`.
 - Static object library `libssfmt.a` inside `/usr/local/lib`.
 
+*as root*
+
+`ldconfig /usr/local/lib`
+> This adding `/usr/local/lib` to dynamic library path.
+
 # Library Documentation
 
 ## The dictionnary
