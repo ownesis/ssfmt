@@ -5,6 +5,9 @@
 
 #define BP_MAX_KEY_LEN 255
 
+#define SSFMT_INIT(a, l, c) \
+    { .array = (a), .array_len = (l), .case_sensitve = (c) }
+
 /**
  * @struct Dict
  * @brief Struct used for make correspondance between identifiers and their values.

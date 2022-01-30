@@ -11,8 +11,8 @@ static char *_string_upper(char *s) {
     return s;
 }
 
-static char *_to_upper_if_case_sensitive(_Bool casse, char *identifier) {
-    if (casse)
+static char *_to_upper_if_case_sensitive(_Bool case_sensitive, char *identifier) {
+    if (!case_sensitive)
         return _string_upper(identifier);
 
     return identifier;
@@ -111,6 +111,8 @@ char *ssfmt_parser(const ssfmt_ctx_t *ctx, const char *format, char *buf, size_t
             buf_index--;
         }
     }
+
+    buf[buf_index] = '\0';
 
     return buf;
 }
