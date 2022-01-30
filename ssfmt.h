@@ -9,10 +9,10 @@
     { .array = (a), .array_len = (l), .case_sensitve = (c) }
 
 /**
- * @struct Dict
+ * @struct SSFMTDict
  * @brief Struct used for make correspondance between identifiers and their values.
  */
-struct Dict {
+struct SSFMTDict {
     char *identifier; /**< The identifier to match */
     char *value; /**< The value of identifier */
 };
@@ -22,7 +22,7 @@ struct Dict {
  * @brief Contextuel structure for `ssfmt_parser` function.
  */
 struct SSFMT_ctx {
-    struct Dict *array; /**< An array of `strcut Dict` used for replace the identifier of a format. */
+    struct SSFMTDict *array; /**< An array of `strcut Dict` used for replace the identifier of a format. */
     size_t array_len; /**< Size of the `array`? */
     _Bool case_sensitve; /**< set to 1 if want to make identifier case sensitive; set 0 for not. */
 };

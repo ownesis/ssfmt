@@ -50,7 +50,7 @@ To change a format with its value, you must specify a "dictionnary" with identif
 The "dictionnary" is a structure with two `char *` fields (for the identifier and its value).
 
 ```c
-struct Dict {
+struct SSFMTDict {
     char *identifier;
     char *value;
 };
@@ -61,7 +61,7 @@ Now, you need to specify the "dictionnary" array in the context structure: `ssfm
 
 ```c
 struct SSFMT_ctx {
-	struct Dict *array;
+	struct SSFMTDict *array;
 	size_t array_len;
 	_Bool case_sensitibe;
 };
@@ -69,7 +69,7 @@ struct SSFMT_ctx {
 
 This context structure take `3` fields:
 
-  - `array`: (struct Dict \*), *This pointer take the array address of Dict structure*.
+  - `array`: (struct SSFMTDict \*), *This pointer take the array address of SSFMTDict structure*.
   - `array_len`: (size\_t), *This object take the array length*.
   - `case_sensitive`: (\_Bool), *If set to `1` the identifer will become case sensitive; If set to `0` the identifer will become not case sensitive*.
 
@@ -118,7 +118,7 @@ If the length result formatted string is greater than `buf_size`, the `buf` will
 
 int main(void) {
 	char buf[BUF_SIZE] = {0};
-	struct Dict array[ARRAY_SIZE] = {
+	struct SSFMTDict array[ARRAY_SIZE] = {
 		[0] = {
 			.identifier = "firstname",
 			.value = "Rick"	
