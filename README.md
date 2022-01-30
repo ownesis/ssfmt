@@ -97,8 +97,8 @@ char *ssfmt_parser(const ssfmt_ctx_t *ctx, const char *format, char *buf, size_t
 
 This function take `4` arguments:
 
-- `ctx`: (const ssfmt\_ctx\_t \*), is a **input** argument, *is take address of the initialized*`struct SSFMT_ctx`.
-- `format`: (const char \*), is a **input** argument, *is a null terminated string with formats to replace*.
+- `ctx`: (const ssfmt\_ctx\_t \*), is an **input** argument, *it's the address of the initialized*`struct SSFMT_ctx`.
+- `format`: (const char \*), is an **input** argument, *is a null terminated string with formats to replace*.
 - `buf`: (char *buf), is a **output** argument, *is take address of a buffer will store the result of the formatted character string* `format`.
 - `buf_len`: (size\_t): is a **input** argument, *is the size of the buffer* `buf`.
 
