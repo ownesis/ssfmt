@@ -13,7 +13,7 @@ Example: `{name}` *(is a format with "name" like indentifier)*
 
 > Example: `\{name\}` *(Here, "name" will not be interpreted like as format)*
 
-An identifier have a limit of `255` charaters. If an identifer len greater than this limit, only the first `255` chararacters are compared.
+An identifier have a limit of `255` charaters. If an identifer length greater than this limit, only the first `255` chararacters are compared.
 
 A identifier can be represented with any of  ascii table characters, but its better to use only alphabet `[a-z]+`upper/lower, digits `[0-9]+` and underscore `_`.
 
@@ -70,7 +70,7 @@ struct SSFMT_ctx {
 This context structure take `3` fields:
 
   - `array`: (struct Dict \*), *This pointer take address of the array of Dict structure*.
-  - `array_len`: (size\_t), *This object take len of* `array`.
+  - `array_len`: (size\_t), *This object take length of* `array`.
   - `case_sensitive`: (\_Bool), *If set to `1` the identifer will become case sensitive; If set to `0` the identifer will become not case sensitive*.
 
 The library propose a macro function for init a context:
@@ -80,7 +80,7 @@ The library propose a macro function for init a context:
 ```
 
 - `a`: is the array.
-- `l`: is the len of array.
+- `l`: is the length of array.
 - `c`: (`1` or `0`) its for enable (`1`) or not (`0`), the case sensitive of identifiers. 
 
 Example of use: 
