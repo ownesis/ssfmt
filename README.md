@@ -79,10 +79,6 @@ The library propose a macro function for init a context:
     { .array = (a), .array_len = (l), .case_sensitve = (c) }
 ```
 
-- `a`: is the array.
-- `l`: is the length of array.
-- `c`: (`1` or `0`) its for enable (`1`) or not (`0`), the case sensitive of identifiers. 
-
 Example of use: 
 ```c
 ssfm_ctx_t ctx = SSFMT_INIT(the_dict_array, 5, 0);
