@@ -1,5 +1,5 @@
-#ifndef __SIMLE_STRING_FORMAT_H__
-#define __SIMLE_STRING_FORMAT_H__
+#ifndef __SIMPLE_STRING_FORMAT_H__
+#define __SIMPLE_STRING_FORMAT_H__
 
 #include <stddef.h>
 
@@ -43,4 +43,4 @@ typedef struct SSFMT_ctx ssfmt_ctx_t;
  */
 char *ssfmt_parser(const ssfmt_ctx_t *ctx, const char *format, char *buf, size_t buf_len);
 
-#endif /* __SIMLE_STRING_FORMAT_H__ */
+#endif /* __SIMPLE_STRING_FORMAT_H__ */
